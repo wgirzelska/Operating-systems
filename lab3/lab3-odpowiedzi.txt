@@ -1,0 +1,41 @@
+zad5
+
+su root
+groupadd gr1
+groupadd r2
+groupadd gr3
+cat /etc/group
+su user2
+groups - sprawdzenie przynaleznosci do grupy
+exit
+mkdir /home/user1/Pulpit1
+mkdir /home/user2/Pulpit2
+mkdir /home/user3/Pulpit3
+mkdir /home/user1/Pulpit1/katalog1
+mkdir /home/user1/Pulpit1/plik_info1
+mkdir /home/user2/Pulpit2/katalog2
+mkdir /home/user2/Pulpit2/plik_info2
+mkdir /home/user3/Pulpit3/katalog3
+mkdir /home/user3/Pulpit3/plik_info3
+tree /home/user*
+chown -R user1:gr1 /home/user1/Pulpit1
+chown -R user2:gr2 /home/user2/Pulpit2
+chown -R user3:gr3 /home/user3/Pulpit3
+
+zad6
+
+chmod 755 /home/user1/Pulpit1
+chmod 744 /home/user1/Pulpit1
+chmod 555 /home/user1/Pulpit1
+chmod 510 /home/user2/Pulpit2/katalog2
+chmod 333 /home/user3/Pulpit3
+chmod 320 /home/user3/Pulpit3/plik_info3
+
+zad7
+
+chmod 444 /home/user1/Pulpit1
+chmod 454 /home/user1/Pulpit1/plik_info1
+chmod 444 /home/user2/Pulpit2
+chmod 454 /home/user2/Pulpit2/plik_info2
+chmod 444 /home/user3/Pulpit3
+chmod 454/home/user3/Pulpit3/plik_info3
